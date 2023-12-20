@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>希望大厦 | cllli</title>
+<title>Stable-Diffusion | cllli</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="https://ossoososssn.oss-cn-beijing.aliyuncs.com/files/about-logo.png">
 <meta name="description" content="">
@@ -623,7 +623,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="sco.toTop()">希望大厦</a>
+                <a id="page-name-text" onclick="sco.toTop()">Stable-Diffusion</a>
             </div>
         </div>
         <div id="menus">
@@ -743,7 +743,7 @@
 </nav>
         
             <div class="coverdiv" id="coverdiv">
-    <img id="post-cover" class="nolazyload" src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/6.jpg" alt="cover">
+    <img id="post-cover" class="nolazyload" src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/Stable-Diffusion/1.jpg" alt="cover">
 </div>
 <div id="post-info">
     <div id="post-firstinfo">
@@ -754,40 +754,45 @@
             
                 <span class="post-meta-categories">
                     
-                        <a class="post-meta-categories" href="/categories/%E5%9B%BE%E7%89%87/">图片</a>
+                        <a class="post-meta-categories" href="/categories/AI/">AI</a>
                     
                 </span>
             
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a class="post-meta__tags" href="/tags/%E5%9B%BE%E7%89%87/">
+                        <a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">
                             <span class="tags-punctuation"></span>
-                            <span class="tags-name">图片</span>
+                            <span class="tags-name">教程</span>
                         </a>
                     
-                        <a class="post-meta__tags" href="/tags/2023/">
+                        <a class="post-meta__tags" href="/tags/AI/">
                             <span class="tags-punctuation"></span>
-                            <span class="tags-name">2023</span>
+                            <span class="tags-name">AI</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/stable-diffusion/">
+                            <span class="tags-punctuation"></span>
+                            <span class="tags-name">stable-diffusion</span>
                         </a>
                     
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="post-title">希望大厦</h1>
+    <h1 class="post-title">Stable-Diffusion</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             
                 <span class="post-meta-date" title="发布于">
                 <i class="post-meta-icon scoicon sco-calendar-todo-fill"></i>
-                <time datetime="2023-04-13T11:56:30+08:00"></time>
+                <time datetime="2023-11-21T00:34:27+08:00"></time>
             </span>
             
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon scoicon sco-refresh-line"></i>
-                    <time datetime="2023-11-17T19:41:02+08:00"></time>
+                    <time datetime="2023-12-20T14:59:59+08:00"></time>
                 </span>
             
             
@@ -848,9 +853,56 @@
         <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <p><strong>Shot by iPhone</strong><br>
-<img src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/6.jpg" alt=""></p>
-<p><video src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/videos/IMG_1872.mov" width="100%" height="100%" autoplay muted loop controls="controls"></video></p>
+            <p>Stable Diffusion是一个AI 绘图软件 （开源模型），可本地部署，可切换多种模型，且新的模型和开源库每天都在更新发布，最重要的是免费，没有绘图次数限制。</p>
+<h2 id="一、安装前的准备">一、安装前的准备</h2>
+<h3 id="1-检查自己的电脑配置是否符合要求">1.检查自己的电脑配置是否符合要求</h3>
+<pre><code>  电脑的显存至少2G以上
+</code></pre>
+<h3 id="2-下载安装Git">2.下载安装Git</h3>
+<pre><code>  ​下载地址：git-scm.com/ 
+  Git是一个免费的、开源的分布式版本控制系统点击Git Bash Here可以打开Git终端
+  检查自己电脑有没有安装Git：【Win+R】唤出【运行】，输入“cmd”，回车，在命令行里输入
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h3 id="3-下载安装Python">3.下载安装Python</h3>
+<pre><code>  下载地址：​www.python.org/
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意要勾选此选项，将python添加到系统环境变量PATH中</span><br><span class="line">检查自己电脑有没有安装成功：【Win+R】唤出【运行】，输入“cmd”，回车，在命令行里输入</span><br><span class="line">python --version</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="二、下载stable-diffusion-webui仓库">二、下载stable-diffusion-webui仓库</h2>
+<h3 id="1-在空间比较大的盘里新建一个文件夹，如下图名为【AI】的文件夹，然后在这个文件夹里点击鼠标右键，选择【Git-Bash-Here】打开Git终端">1.在空间比较大的盘里新建一个文件夹，如下图名为【AI】的文件夹，然后在这个文件夹里点击鼠标右键，选择【Git Bash Here】打开Git终端</h3>
+<pre><code>      通过Git命令克隆下载代码（之前代码打错了，导致很多人克隆完成后文件不对，这次对代码进行了修正）
+    ```  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git ```
+</code></pre>
+<ul>
+<li>出现问题：OpenSSL SSL_read: Connection was reset, errno 10054<br>
+解决方法：<br>
+关闭git的https证书验证</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify false</span><br></pre></td></tr></table></figure>
+<p>之后再次clone代码，成功！<br>
+同时可以看到文件夹里也下载好了</p>
+<h2 id="三、运行webui-user-bat">三、运行webui-user.bat</h2>
+<h3 id="1-下载中，出现新问题：提示pip更新？解决方法：">1.下载中，出现新问题：提示pip更新？解决方法：</h3>
+<p>升级pip命令，可以重新打开一个命令行，运行一次它提示的绿色命令（因为文件夹名称可能不同，所以这条命令因人而异）H:\AI\stable-diffusion-webui\venv\Scripts\python.exe -m pip install --upgrade pip<br>
+之后再次重新打开webui-user.bat<br>
+因为在安装过程中没有使用魔法上网，所以在下载过程中出现了gfpgan、clip、open clip没有安装成功的提示，还是国内的网络环境的原因，解决方法：<br>
+编辑stable-diffusion-webui目录里的launch.py文件<br>
+用记事本打开</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">比如卡在了gfpgan，就找到run_pip(f&quot;install &#123;gfpgan_package&#125;“, “gfpgan”)所在行，如下图launch.py文件的第263行，把它改为run_pip(f&quot;install -i https://pypi.douban.com/simple/ &#123;gfpgan_package&#125;”, “gfpgan”)，修改后保存关闭，走国内的镜像源（ -i https://pypi.douban.com/simple/），提高下载速度</span><br><span class="line">run_pip(f&quot;install -i https://pypi.douban.com/simple/ &#123;gfpgan_package&#125;&quot;, &quot;gfpgan&quot;)</span><br><span class="line">之后保存launch.py文件，再次打开webui-user.bat</span><br><span class="line">（每次下载出现问题，就修改launch.py文件里的对应内容，比如clip出问题就把launch.py文件里的run_pip(f&quot;install &#123;clip_package&#125;“, “clip”)改为run_pip(f&quot;install -i https://pypi.douban.com/simple/ &#123;clip_package&#125;”, “clip”)），gfpgan、clip、open clip都是一样的操作，如此反复（修改launch.py、关闭命令行、重新打开webui-user.bat）</span><br></pre></td></tr></table></figure>
+<p>如果还是卡住不动的话，在launch.py文件里找到prepare_environment()这部分，在对应的<a target="_blank" rel="noopener" href="https://github.com/%E5%89%8D%E9%9D%A2%E5%8A%A0%E4%B8%8Ahttps://github.moeyy.xyz/">https://github.com/前面加上https://github.moeyy.xyz/</a></p>
+<p>通过代理的方式加速git</p>
+<ul>
+<li>补充</li>
+</ul>
+<p>如果launch.py没有找到或者文件内容不一样<br>
+在launch_utils.py下修改完正常安装，在263，266，269三行<br>
+经过多次修改、关闭、重启，最后终于走到了Web UI这里<br>
+一切顺利的话，接下来就要下载一个3.97G的大东西，中间如果卡住，还是关闭命令行、重新打开webui-user.bat<br>
+经过一段时间的等待，进度条终于填满了，也出现了我们最希望看到的内容<br>
+表示本地电脑启动了一个服务，端口是127.0.0.1:7860</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">把http://127.0.0.1:7860复制到浏览器中打开，进入Stable Diffusion界面</span><br></pre></td></tr></table></figure>
+<h2 id="四、AI绘画Prompt提示词">四、AI绘画Prompt提示词</h2>
+<p>提示词网站：<a target="_blank" rel="noopener" href="https://civitai.com/">https://civitai.com/</a></p>
 
         </article>
 
@@ -858,19 +910,27 @@
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a href="/tags/%E5%9B%BE%E7%89%87/" class="post-meta__tags">
+                        <a href="/tags/%E6%95%99%E7%A8%8B/" class="post-meta__tags">
                             <span class="tags-punctuation"></span>
-                            图片
+                            教程
                                 <span class="tagsPageCount">
-                                    13
+                                    4
                                 </span>
                         </a>
                         
-                        <a href="/tags/2023/" class="post-meta__tags">
+                        <a href="/tags/AI/" class="post-meta__tags">
                             <span class="tags-punctuation"></span>
-                            2023
+                            AI
                                 <span class="tagsPageCount">
-                                    13
+                                    1
+                                </span>
+                        </a>
+                        
+                        <a href="/tags/stable-diffusion/" class="post-meta__tags">
+                            <span class="tags-punctuation"></span>
+                            stable-diffusion
+                                <span class="tagsPageCount">
+                                    1
                                 </span>
                         </a>
                         
@@ -882,18 +942,18 @@
             <nav class="needEndHide pagination-post" id="pagination">
     
         <div class="prev-post pull-left">
-            <a href="/2023/04/13/11/">
+            <a href="/2023/11/22/2023-12-20/">
                 <div class="pagination-info">
                     <div class="label">上一篇</div>
-                    <div class="prev_info">梭鱼湾</div>
+                    <div class="prev_info">摄影</div>
                 </div>
             </a>
         </div>
         <div class="next-post pull-right">
-            <a href="/2023/04/08/7/">
+            <a href="/2023/11/20/wallpaper-2/">
                 <div class="pagination-info">
                     <div class="label">下一篇</div>
-                    <div class="next_info">遇见鸽子</div>
+                    <div class="next_info">IOS 17 实况壁纸</div>
                 </div>
             </a>
         </div>
@@ -901,7 +961,7 @@
 </nav>
                 
 
-                    <div class="relatedPosts"><div class="headline"><i class="scoicon sco-star-smile-fill"></i><span>喜欢这篇的人也看了</span><div class="relatedPosts-link"><a onclick="event.preventDefault(); toRandomPost();" href="javascript:void(0);" rel="external nofollow" data-pjax-state="">随便逛逛</a></div></div><div class="relatedPosts-list"><div><a href="/2023/07/22/36/" title="晴天"><img class="cover" src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/82.jpg" alt="cover"><div class="content is-center"><div class="title">晴天</div></div></a></div></div></div>
+                    <div class="relatedPosts"><div class="headline"><i class="scoicon sco-star-smile-fill"></i><span>喜欢这篇的人也看了</span><div class="relatedPosts-link"><a onclick="event.preventDefault(); toRandomPost();" href="javascript:void(0);" rel="external nofollow" data-pjax-state="">随便逛逛</a></div></div><div class="relatedPosts-list"><div><a href="/2023/11/13/disposition/" title="配置"><img class="cover" src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/Web/Web_1920x400.jpg" alt="cover"><div class="content is-center"><div class="title">配置</div></div></a></div></div></div>
 
                         
                             <div id="post-comment" view-image>
@@ -1007,7 +1067,7 @@
         <span>文章目录</span>
     </div>
     <div class="toc-content" id="toc-content">
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87"><span class="toc-text">一、安装前的准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A3%80%E6%9F%A5%E8%87%AA%E5%B7%B1%E7%9A%84%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88%E8%A6%81%E6%B1%82"><span class="toc-text">1.检查自己的电脑配置是否符合要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85Git"><span class="toc-text">2.下载安装Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85Python"><span class="toc-text">3.下载安装Python</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%B8%8B%E8%BD%BDstable-diffusion-webui%E4%BB%93%E5%BA%93"><span class="toc-text">二、下载stable-diffusion-webui仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9C%A8%E7%A9%BA%E9%97%B4%E6%AF%94%E8%BE%83%E5%A4%A7%E7%9A%84%E7%9B%98%E9%87%8C%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%A6%82%E4%B8%8B%E5%9B%BE%E5%90%8D%E4%B8%BA%E3%80%90AI%E3%80%91%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8%E8%BF%99%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%82%B9%E5%87%BB%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%EF%BC%8C%E9%80%89%E6%8B%A9%E3%80%90Git-Bash-Here%E3%80%91%E6%89%93%E5%BC%80Git%E7%BB%88%E7%AB%AF"><span class="toc-text">1.在空间比较大的盘里新建一个文件夹，如下图名为【AI】的文件夹，然后在这个文件夹里点击鼠标右键，选择【Git Bash Here】打开Git终端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%BF%90%E8%A1%8Cwebui-user-bat"><span class="toc-text">三、运行webui-user.bat</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E4%B8%AD%EF%BC%8C%E5%87%BA%E7%8E%B0%E6%96%B0%E9%97%AE%E9%A2%98%EF%BC%9A%E6%8F%90%E7%A4%BApip%E6%9B%B4%E6%96%B0%EF%BC%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-text">1.下载中，出现新问题：提示pip更新？解决方法：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81AI%E7%BB%98%E7%94%BBPrompt%E6%8F%90%E7%A4%BA%E8%AF%8D"><span class="toc-text">四、AI绘画Prompt提示词</span></a></li></ol>
     </div>
 </div>
             
